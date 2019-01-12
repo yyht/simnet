@@ -1,0 +1,61 @@
+{
+    "max_length": 100,
+    "char_limit": 10,
+    "scope":"DRCN",
+    "num_classes":3,
+
+    "with_char": false,
+    "char_emb_dim": 20,
+    "char_lstm_dim": 40,
+
+    "batch_size": 32,
+    "max_epochs": 100,
+    "dropout_rate": 0.2,
+    "learning_rate": 0.001,
+    "optimizer": "adam",
+    "lambda_l2": 0.0,
+    "grad_clipper": 10.0,
+
+    "context_layer_num": 1,
+    "context_lstm_dim": 100,
+
+    "slstm_layer_num": 5,
+    "lstm_type":"normal",
+    "recurrent_layer_norm":false,
+
+    "rnn":"lstm",
+    "random_initialize":false,
+    "step":5,
+    "slstm_hidden_size":300,
+
+    "highway_layer_num": 1,
+    "with_highway": true,
+    "with_match_highway": true,
+    "with_aggregation_highway": true,
+
+    "use_cudnn": true,
+
+    "with_moving_average": 0.999,
+
+    "num_lstm_layers":3,
+    "with_auto_encoding":false,
+
+    "loss":"focal_loss_binary_v2",
+
+    "alpha":0.5,
+    "gamma":2.0,
+    "name":"focal_loss_binary_v2",
+
+    "co_attention":true,
+
+    "scale":30,
+    "margin":0.35,
+
+
+
+    "num_heads":8,
+    "with_self_attention":false,
+
+    "apply_elmo":false,
+    "elmo_pca":false
+}
